@@ -1,6 +1,6 @@
 import "./App.css";
 import Title from "./Title.jsx";
-import Product from "./Product.jsx";
+// import Product from "./Product.jsx";
 
 function Description() {
   return <h3>This is description!</h3>;
