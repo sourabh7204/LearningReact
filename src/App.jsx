@@ -1,5 +1,6 @@
 import "./App.css";
-import { Title } from "./Title.jsx";
+import Title from "./Title.jsx";
+import Product from "./Product.jsx";
 
 function Description() {
   return <h3>This is description!</h3>;
@@ -9,7 +10,6 @@ function App() {
   return (
     <div>
       <div>
-        {" "}
         <Title />
         <Description />
       </div>
