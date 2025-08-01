@@ -1,27 +1,9 @@
 import "./App.css";
 import Title from "./Title.jsx";
-// import Product from "./Product.jsx";
-
-function Description() {
-  return <h3>This is description!</h3>;
-}
+import ProductTab from "./ProductTab.jsx";
 
 function App() {
-  return (
-    <div>
-      <div>
-        <Title />
-        <Description />
-      </div>
-      <div>
-        <Title />
-        <Description />
-      </div>
-
-      <Title />
-      <Description />
-    </div>
-  );
+  return <ProductTab />;
 }
 
 export default App;
