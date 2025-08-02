@@ -4,7 +4,6 @@ import ProductTab from "./ProductTab.jsx";
 function App() {
   return (
     <>
-      {" "}
       <ProductTab />
     </>
   );

@@ -1,8 +1,11 @@
-export default function Price() {
+function Price({ oldPrice, newPrice }) {
   return (
     <div>
-      <p>oldPrice</p>
-      <p>newPrice</p>
+      <span>{oldPrice}</span>
+      &nbsp; &nbsp; &nbsp;
+      <span>{newPrice}</span>
     </div>
   );
 }
+
+export default Price;
