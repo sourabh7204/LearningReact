@@ -6,6 +6,10 @@ function handleHover() {
   return console.log("Hover over me!");
 }
 
+function dblClick() {
+  return console.log("Double Clicked me!");
+}
+
 export default function Button() {
   return (
     <div>
@@ -17,6 +21,7 @@ export default function Button() {
         you understand what information we collect, why we collect it, and how
         you can update, manage, export, and delete your information.
       </p>
+      <button onDoubleClick={dblClick}>Click me!</button>
     </div>
   );
 }
