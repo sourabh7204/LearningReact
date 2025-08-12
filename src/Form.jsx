@@ -3,7 +3,6 @@ function handleFormSubmit(event) {
   console.log("Form was submitted");
 }
 
-//Form function
 export default function Form() {
   return (
     <form onSubmit={handleFormSubmit}>
