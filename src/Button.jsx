@@ -10,6 +10,7 @@ function dblClick() {
   return console.log("Double Clicked me!");
 }
 
+//Button Function
 export default function Button() {
   return (
     <div>
