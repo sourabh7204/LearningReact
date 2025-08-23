@@ -7,20 +7,54 @@ export default function LudoBoard() {
     red: 0,
     green: 0,
   });
+
+  let UpdateBlue = () => {
+    setMoves((prevMoves) => {
+      return { ...prevMoves, blue: prevMoves.blue + 1 };
+    });
+  };
+
+  let UpdateRed = () => {
+    setMoves((prevMoves) => {
+      return { ...prevMoves, red: prevMoves.red + 1 };
+    });
+  };
+
+  let UpdateYellow = () => {
+    setMoves((prevMoves) => {
+      return { ...prevMoves, yellow: prevMoves.yellow + 1 };
+    });
+  };
+
+  let UpdateGreen = () => {
+    setMoves((prevMoves) => {
+      return { ...prevMoves, green: prevMoves.green + 1 };
+    });
+  };
+
   return (
     <div>
       <p>Game Begins!</p>
       <div className="board">
         <p>Blue moves={moves.blue}</p>
-        <button style={{ backgroundColor: "blue" }}>+1</button>
+        <button style={{ backgroundColor: "blue" }} onClick={UpdateBlue}>
+          +1
+        </button>
         <p>Yellow moves={moves.yellow}</p>
-        <button style={{ backgroundColor: "yellow", color: "black" }}>
+        <button
+          style={{ backgroundColor: "yellow", color: "black" }}
+          onClick={UpdateYellow}
+        >
           +1
         </button>
         <p>Green moves={moves.green}</p>
-        <button style={{ backgroundColor: "green" }}>+1</button>
+        <button style={{ backgroundColor: "green" }} onClick={UpdateGreen}>
+          +1
+        </button>
         <p>Red moves={moves.red}</p>
-        <button style={{ backgroundColor: "red" }}>+1</button>
+        <button style={{ backgroundColor: "red" }} onClick={UpdateRed}>
+          +1
+        </button>
       </div>
     </div>
   );
