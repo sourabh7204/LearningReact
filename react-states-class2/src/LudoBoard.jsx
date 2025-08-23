@@ -8,10 +8,17 @@ export default function LudoBoard() {
     green: 0,
   });
 
+  let [arr, SetArr] = useState(["no moves"]);
+
   let UpdateBlue = () => {
-    setMoves((prevMoves) => {
-      return { ...prevMoves, blue: prevMoves.blue + 1 };
+    // setMoves((prevMoves) => {
+    //   return { ...prevMoves, blue: prevMoves.blue + 1 };
+    // });
+
+    SetArr((prevArr) => {
+      return [...prevArr, " blue moves"];
     });
+    console.log(arr);
   };
 
   let UpdateRed = () => {
@@ -35,6 +42,7 @@ export default function LudoBoard() {
   return (
     <div>
       <p>Game Begins!</p>
+      <p>{arr}</p>
       <div className="board">
         <p>Blue moves={moves.blue}</p>
         <button style={{ backgroundColor: "blue" }} onClick={UpdateBlue}>
