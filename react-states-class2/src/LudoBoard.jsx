@@ -11,9 +11,9 @@ export default function LudoBoard() {
   let [arr, SetArr] = useState(["no moves"]);
 
   let UpdateBlue = () => {
-    // setMoves((prevMoves) => {
-    //   return { ...prevMoves, blue: prevMoves.blue + 1 };
-    // });
+    setMoves((prevMoves) => {
+      return { ...prevMoves, blue: prevMoves.blue + 1 };
+    });
 
     SetArr((prevArr) => {
       return [...prevArr, " blue moves"];
