@@ -4,6 +4,7 @@ import LudoBoard from "./LudoBoard";
 import TodoList from "./TodoList";
 import { sum } from "./helper";
 import Form from "./Form";
+import CommentsForm from "./CommentsForm";
 
 //Function For Ticket
 // function App() {
@@ -20,7 +21,7 @@ import Form from "./Form";
 
 //Funtion for Form
 function App() {
-  return <Form />;
+  return <CommentsForm />;
 }
 
 export default App;
